@@ -15,7 +15,6 @@
 		67A7809B238C480F0061F35F /* Screen Shot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A7809A238C480F0061F35F /* Screen Shot 2.png */; };
 		67B0BBA72386DF69007009E9 /* Metadata_Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0BBA62386DF69007009E9 /* Metadata_Server.swift */; };
 		67B0BBA92386DFCD007009E9 /* ImageMetadata_M.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0BBA82386DFCD007009E9 /* ImageMetadata_M.swift */; };
-		67B0BBAA2386E016007009E9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94E98A5D1BA381AB00FEC16F /* Info.plist */; };
 		67B0BBAC2387210A007009E9 /* Image_Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0BBAB2387210A007009E9 /* Image_Server.swift */; };
 		67D1524E23886E7F000174EF /* DataTable_VC_QuickLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D1524D23886E7F000174EF /* DataTable_VC_QuickLook.swift */; };
 		67D1525023887031000174EF /* READ_ME.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 67D1524F23887031000174EF /* READ_ME.rtf */; };
@@ -161,7 +160,7 @@
 		94E98A491BA381AA00FEC16F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Rich Life LLC";
 				TargetAttributes = {
 					94E98A501BA381AA00FEC16F = {
@@ -203,7 +202,6 @@
 				94E98A5C1BA381AB00FEC16F /* Main.storyboard in Resources */,
 				670B4741238B326000023468 /* stay puft - 512.jpg in Resources */,
 				67D1525023887031000174EF /* READ_ME.rtf in Resources */,
-				67B0BBAA2386E016007009E9 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +259,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -317,6 +316,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
