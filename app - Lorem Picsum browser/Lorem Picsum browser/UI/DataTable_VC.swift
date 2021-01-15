@@ -259,13 +259,13 @@ extension DataTable_VC : NSTableViewDelegate {
 		if let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: cellIdentifier), owner: nil) as? NSTableCellView {
 			cell.textField?.stringValue = text
 			
+			// make sure to set the cell to a slug value before retrieving intended value
+			cell.imageView?.image = #imageLiteral(resourceName: "broken image.png")
+
 			if key == .Image {
 				Image_Server.shared.retrieveImageFor(item:item, size: .Thumbnail)  { image in
 					DispatchQueue.main.async { cell.imageView?.image = image }
 				}
-				
-			} else {
-				cell.imageView?.image = #imageLiteral(resourceName: "broken image.png")
 			}
 			
 			return cell
