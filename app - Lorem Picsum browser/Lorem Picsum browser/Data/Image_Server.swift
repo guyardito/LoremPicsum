@@ -28,7 +28,7 @@ class Image_Server {
 	lazy var downloadQueue: OperationQueue = {
 		var queue = OperationQueue()
 		queue.name = "Download queue"
-		queue.maxConcurrentOperationCount = 5
+		//queue.maxConcurrentOperationCount = 20  // for testing
 		return queue
 	}()
 	
@@ -129,7 +129,7 @@ class Image_Server {
 				return
 			}
 			
-			DispatchQueue.main.async {
+			DispatchQueue.global().async {
 				if let image = downloader.image {
 					self.lock.lock()
 					self.memoryCacheForThumbnails[url.absoluteString] = image
